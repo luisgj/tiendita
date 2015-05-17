@@ -149,7 +149,11 @@ paper-tabs[noink][nobar] paper-tab.core-selected {
       }
 
       #menu {
-        margin-left: 2em;
+        margin-left: 0.4em;
+      }
+
+      #userlogin {
+        margin-left: 1.6em;
       }
 
 
