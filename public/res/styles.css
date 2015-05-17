@@ -170,3 +170,10 @@ paper-button.colored {
   padding: 5px;
 }
 
+#barra{
+  width: 100%;
+    position: relative;
+  top: -2.2em;
+  
+}
+
