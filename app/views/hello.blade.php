@@ -17,10 +17,10 @@
 	<link rel="stylesheet" type="text/css" href="/res/styles.css">
 </head>
 <body unresolved>
-	<core-toolbar style="background: #4285f4;">
-    	<paper-icon-button icon="menu"></paper-icon-button>
-    	<span flex>Title</span>
-    	<paper-input label="¿Que andas buscando?" floatingLabel></paper-input>
+	<core-toolbar style="background: #f1f1f2;">
+	<img id="logo1" src="/res/im/LogoCirculo.png">
+    	<span flex>Tiendapp</span>
+    	<paper-input label="¿Que andas buscando?" floatingLabel style="width:30%; margin-right:4em; margin-bottom:0.7em"></paper-input>
  	</core-toolbar>
   <map-stores-mexico></map-stores-mexico>
   <grid-cards-animated></grid-cards-animated>

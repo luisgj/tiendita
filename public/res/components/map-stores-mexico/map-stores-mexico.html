@@ -11,7 +11,7 @@
     <google-map latitude="{{alat}}" longitude="{{alng}}" zoom="16">
       <google-map-marker id="usermarker" latitude="" longitude="" title="user"></google-map-marker>
       <template repeat="{{ s in stores}}">
-        <google-map-marker latitude="{{s.lat}}" longitude="{{s.lng}}" title={{s.name}}></google-map-marker>
+        <google-map-marker latitude="{{s.lat}}" longitude="{{s.lng}}" title={{s.name}} icon="/res/img/tienda.png"></google-map-marker>
       </template>
     </google-map>
     
