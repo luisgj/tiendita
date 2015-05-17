@@ -10,6 +10,7 @@
 
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
   
+  <link rel="import" href="bower_components/geo-location/geo-location.html">
   <link rel="import" href="bower_components/google-map/google-map.html">
   <link rel="import" href="bower_components/core-icons/core-icons.html">
   <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
@@ -25,11 +26,6 @@
 </head>
 
 <body unresolved>
-  
-    <template id="Template1" is="auto-binding">
-      <geo-location latitude="{{lat}}" longitude="{{lng}}"></geo-location>
-      <google-map latitude="{{lat}}" longitude="{{lng}}" showcentermarker></google-map>
-    </template>
 
   <script src="main.js"></script>
 </body>
