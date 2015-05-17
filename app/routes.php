@@ -21,7 +21,7 @@ Route::get('/geolocate/establishment/{lat}/{lng}',
 		 'uses'  => 'EstablishmentController@listEstablishment'
 ));
 
-Route::get('/geolocate/establishment/list', 'ProductsController@listProducts');
+Route::get('/geolocate/establishment/products/list', 'ProductsController@listProducts');
 
 Route::get('/geolocate', function(){
     $config = array();
