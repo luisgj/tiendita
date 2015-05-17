@@ -6,7 +6,9 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 	  	"cartalyst/sentry": "2.1.*",
-	  	"appitventures/phpgmaps": "1.0.*@dev"
+	  	"appitventures/phpgmaps": "1.0.*@dev",
+		"guzzlehttp/guzzle": "^5.2",
+		"aws/aws-sdk-php-laravel": "1.*"
 	},
 	"autoload": {
 		"classmap": [
