@@ -172,6 +172,8 @@ paper-button.colored {
 
 #barra{
   width: 100%;
+    position: relative;
+  top: -2.2em;
   
 }
 
