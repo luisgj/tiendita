@@ -15,7 +15,6 @@
     </google-map>
     
     <core-ajax id="getAjax"
-    auto
     url="http://localhost/geolocate/establishment/12/12"
     handleAs="json"
     on-core-response="{{drawMarkers}}"></core-ajax>
@@ -37,7 +36,7 @@
       ready: function() {
         navigator.geolocation.getCurrentPosition(showPosition);
         function showPosition(position){
-          document.querySelector("map-stores-mexico").$.getAjax.params = {"lat": position.coords.latitude, "lng": position.coords.longitude}
+          document.querySelector("map-stores-mexico").$.getAjax.go();
           document.querySelector("map-stores-mexico").$.usermarker.latitude = position.coords.latitude;
           document.querySelector("map-stores-mexico").$.usermarker.longitude = position.coords.longitude;
         }
