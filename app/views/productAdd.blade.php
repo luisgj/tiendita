@@ -17,8 +17,15 @@
     <link rel="stylesheet" type="text/css" href="/res/styles.css">
 </head>
 <body unresolved>
+    <core-toolbar style="background: #8ED0E8;">
+        <img id="logo1" src="/res/img/LogoCirculo.png">
+        <img id="logo2" src="/res/img/LogoTiendapp.png">
+        <input id="input1" type="text" name="" value="" placeholder="¿QUÉ SE TE ANTOJA?">
+        <img id="menu" src="/res/img/Menu.png">
+        <img id="userlogin" src="/res/img/LogIn.png">
+    </core-toolbar>
     <div style="width:1000px; margin:0 auto;">
-        <h1>Agregar Producto</h1>
+        <h1>Agregar producto a inventario</h1>
         <paper-input-decorator label="Nombre">
           <input is="core-input" id="product-name">
         </paper-input-decorator>
@@ -32,8 +39,9 @@
         </paper-input-decorator>
         <paper-button id="addproduct" raised class="colored">Agregar</paper-button>
         <div style="display: block; margin-top: 45px;">
+            <h1>Arega el código de barras de tu producto</h1>
             {{Form::file('barcode',null,array('class' => 'product-barcode'))}}
-            <paper-button raised class="colored" style="display: block;" id="addbarcode">Agregar identificador</paper-button>
+            <paper-button raised class="colored" style="display: block; min-wdth: 130px;" id="addbarcode">Agregar código de barras</paper-button>
             <h4 class="adding" style="display:none; color: #844D9D;">Agregando</h4>
         </div>
     </div>
@@ -54,7 +62,9 @@
                 data : formData,
                 success: function(data, textStatus, jqXHR)
                 {
-                    console.log(data.exito);
+                    $('#addproduct').css('background-color', 'green');
+                    $('#addproduct').text('Agregado!');
+
                 },
                 error: function (jqXHR, textStatus, errorThrown)
                 {
