@@ -25,3 +25,8 @@
 google-map {
   height: 500px;
 }
+
+paper-shadow {
+	margin: 2em;
+	padding: 5px;
+}

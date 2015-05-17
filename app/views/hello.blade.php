@@ -26,7 +26,7 @@
     	<img id="menu" src="/res/img/Menu.png">
     	<img id="userlogin" src="/res/img/LogIn.png">
  	</core-toolbar>
- 	<paper-shadow class="card" z="2">
+ 	<paper-shadow class="card" z="3">
       <map-stores-mexico></map-stores-mexico>
     </paper-shadow>
   <grid-cards-animated></grid-cards-animated>
