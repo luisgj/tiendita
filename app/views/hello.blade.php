@@ -17,10 +17,10 @@
 	<link rel="stylesheet" type="text/css" href="/res/styles.css">
 </head>
 <body unresolved>
-	<core-toolbar style="background: #f1f1f2;">
+	<core-toolbar style="background: #8ED0E8;">
 		<img id="logo1" src="/res/img/LogoCirculo.png">
     	<img id="logo2" src="/res/img/LogoTiendapp.png">
-    	<paper-input label="¿Que andas buscando?" floatingLabel style="width:30%; margin-right:4em; margin-bottom:0.7em"></paper-input>
+    	<input id="input1" type="text" name="" value="" placeholder="¿QUÉ SE TE ANTOJA?">
  	</core-toolbar>
   <map-stores-mexico></map-stores-mexico>
   <grid-cards-animated></grid-cards-animated>
