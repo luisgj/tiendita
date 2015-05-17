@@ -15,8 +15,9 @@ class ProductsController extends BaseController
         $data = Input::all();
 
         $product = new Product(array(
-            'title' => $data['title'],
+            'name' => $data['name'],
             'desc' => $data['desc'],
+            'price' => $data['price']
         ));
 
         if($product->save()){
