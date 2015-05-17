@@ -43,7 +43,7 @@ class ProductTableSeeder extends Seeder{
                 'id_establishment' => '1',
                 'name' => 'coca cola',
                 'price' => '18.00',
-                'url' => '/res/img/coca.jpg'
+                'url' => '/res/img/coca.jpg',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
