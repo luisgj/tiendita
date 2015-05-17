@@ -101,7 +101,7 @@ paper-tabs[noink][nobar] paper-tab.core-selected {
       }
 
       .card {
-        height: 400px;
+        height: 500px;
         border-radius: 3px;
         text-align: start;
         overflow: hidden;
@@ -164,4 +164,9 @@ paper-button.colored {
       background: #4285f4;
       color: #fff;
     }
+
+    paper-shadow {
+  margin: 2em;
+  padding: 5px;
+}
 

@@ -13,6 +13,8 @@
 	<link rel="import" href="/res/components/paper-input/paper-input-decorator.html">
 	<link rel="import" href="/res/components/paper-input/paper-input.html">
 	<link rel="import" href="/res/components/grid-cards-animated/grid-cards-animated.html">
+	<link rel="import" href="/res/components/paper-shadow/paper-shadow.html">
+	
 
 	<link rel="stylesheet" type="text/css" href="/res/styles.css">
 </head>
@@ -24,7 +26,9 @@
     	<img id="menu" src="/res/img/Menu.png">
     	<img id="userlogin" src="/res/img/LogIn.png">
  	</core-toolbar>
-  <map-stores-mexico></map-stores-mexico>
+ 	<paper-shadow class="card" z="3">
+      <map-stores-mexico></map-stores-mexico>
+    </paper-shadow>
   <grid-cards-animated></grid-cards-animated>
 </body>
 </html>
