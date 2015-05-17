@@ -43,68 +43,63 @@ class ProductTableSeeder extends Seeder{
                 'id_establishment' => '1',
                 'name' => 'coca cola',
                 'price' => '18.00',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                'url' => '/res/img/coca.jpg'
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
                 'id_establishment' => '1',
-                'name' => 'papel de baño',
-                'price' => '44.00',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                'name' => 'Bonafont',
+                'price' => '10.00',
+                'url' => '/res/img/bonafont.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
                 'id_establishment' => '1',
-                'name' => 'sabritas',
+                'name' => 'chokis',
                 'price' => '12.00',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                'url' => '/res/img/chokis.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
-        DB::table('products')->insert(array(
-                'id_establishment' => '1',
-                'name' => 'pepsi',
-                'price' => '11.00',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-        ));
-
         DB::table('products')->insert(array(
                 'id_establishment' => '1',
                 'name' => 'doritos',
+                'price' => '11.00',
+                'url' => '/res/img/doritos.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+        ));
+
+        DB::table('products')->insert(array(
+                'id_establishment' => '1',
+                'name' => 'emperador',
                 'price' => '9.00',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                'url' => '/res/img/emperador.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
                 'id_establishment' => '2',
-                'name' => 'coca cola',
-                'price' => '18.50',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                'name' => 'paquetaxo',
+                'price' => '12.50',
+                'url' => '/res/img/paquetaxo.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
                 'id_establishment' => '2',
-                'name' => 'papel de baño',
-                'price' => '42.50',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                'name' => 'sandwich',
+                'price' => '14.00',
+                'url' => '/res/img/sandwich.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
                 'id_establishment' => '2',
-                'name' => 'sabritas',
+                'name' => 'zucaritas',
                 'price' => '11.50',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-        ));
-        DB::table('products')->insert(array(
-                'id_establishment' => '2',
-                'name' => 'pepsi',
-                'price' => '11.00',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-        ));
-
-        DB::table('products')->insert(array(
-                'id_establishment' => '2',
-                'name' => 'doritos',
-                'price' => '12.00',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                'url' => '/res/img/zucaritas.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 	}
 }
