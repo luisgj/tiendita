@@ -1,7 +1,0 @@
-{
-  "name": "map-stores-mexico",
-  "private": true,
-  "dependencies": {
-    "polymer": "Polymer/polymer#^0.5.5"
-  }
-}
