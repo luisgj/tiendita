@@ -16,6 +16,8 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('/checkout', 'ConektaController@creditCart');
+
 Route::get('/geolocate/establishment/{lat}/{lng}', 
 	array('as'   => 'listEstablishment', 
 		 'uses'  => 'EstablishmentController@listEstablishment'
