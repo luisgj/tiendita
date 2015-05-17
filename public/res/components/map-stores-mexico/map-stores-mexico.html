@@ -9,7 +9,7 @@
     
     <geo-location latitude="{{alat}}" longitude="{{alng}}"></geo-location>
     <google-map latitude="{{alat}}" longitude="{{alng}}" zoom="16">
-      <google-map-marker id="usermarker" latitude="" longitude="" title="user" icon="/res/img/usermark.png"></google-map-marker>
+      <google-map-marker id="usermarker" latitude="" longitude="" title="user" icon="/res/img/usermark.png" clickEvents on-click={{toogleHide}}></google-map-marker>
       <template repeat="{{ s in stores}}">
         <google-map-marker latitude="{{s.lat}}" longitude="{{s.lng}}" title={{s.name}} icon="/res/img/tienda.png"></google-map-marker>
       </template>
@@ -27,6 +27,10 @@
     Polymer('map-stores-mexico', {
       
       attr: '',
+
+      toogleHide: function(){
+        document.querySelector("#divall").hide = flase
+      } ,
       
       drawMarkers: function(e, res){
         

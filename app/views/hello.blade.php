@@ -29,7 +29,9 @@
  	<paper-shadow class="card" z="3">
       <map-stores-mexico></map-stores-mexico>
     </paper-shadow>
+    <div id="divall" hide>
     <img id="barra" src="/res/img/Barra.png">
   <grid-cards-animated></grid-cards-animated>
+  </div>
 </body>
 </html>
