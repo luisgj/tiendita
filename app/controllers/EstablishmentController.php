@@ -3,7 +3,10 @@ class EstablishmentController extends BaseController{
 
 	public function listEstablishment($lat = null, $lng = null){
 
-		return Response::json(array('name' => 'La costeñita', 'state' => 'CA'));
+		//$establishments = DB::table('establishments')->select('name', 'lat', 'lng')->get();
+		$establishments = Establishment::all()->toJson();
+
+		return $establishments;
 	
 	}
 }
