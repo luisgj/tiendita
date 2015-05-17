@@ -123,3 +123,19 @@ paper-tabs[noink][nobar] paper-tab.core-selected {
         font-size: 2em;
       }
 
+      #logo1 {
+        position: absolute;
+        left: 3em
+        top: 3em;
+        width: 100px;
+        height: 100px;
+      }
+
+      #logo1 {
+        position: absolute;
+        left: 8em
+        top: 3em;
+        width: 100px;
+        height: 100px;
+      }
+
