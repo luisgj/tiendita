@@ -17,10 +17,18 @@
     <link rel="stylesheet" type="text/css" href="/res/styles.css">
 </head>
 <body unresolved>
-    {{Form::text('name',null,array('id' => 'product-name'))}}
-    {{Form::textarea('desc',null,array('id' => 'product-desc'))}}
-    {{Form::text('price',null,array('id' => 'product-price'))}}
-    <button id="addproduct">Agregar</button>
+    <paper-input-decorator label="Nombre">
+      <input is="core-input" id="product-name">
+    </paper-input-decorator>
+    <paper-input-decorator label="Descripción">
+      <paper-autogrow-textarea>
+        <textarea id="product-desc"></textarea>
+      </paper-autogrow-textarea>
+    </paper-input-decorator>
+    <paper-input-decorator label="Nombre">
+      <input is="core-input" id="product-price">
+    </paper-input-decorator>
+    <paper-button raised class="colored">Agregar</paper-button>
     {{Form::file('barcode',null,array('class' => 'product-barcode'))}}
     <button id="addbarcode">Agregar identificador</button>
     <h1 class="adding" style="display:none;">Agregando</h1>

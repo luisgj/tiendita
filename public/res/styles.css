@@ -156,4 +156,12 @@ paper-tabs[noink][nobar] paper-tab.core-selected {
         margin-left: 1.6em;
       }
 
+paper-button.colored {
+      color: #4285f4;
+    }
+
+    paper-button[raised].colored {
+      background: #4285f4;
+      color: #fff;
+    }
 
