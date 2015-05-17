@@ -21,6 +21,8 @@ Route::get('/geolocate/establishment/{lat}/{lng}',
 		 'uses'  => 'EstablishmentController@listEstablishment'
 ));
 
+Route::get('/geolocate/establishment/products/list', 'ProductsController@listProducts');
+
 Route::get('/geolocate', function(){
     $config = array();
 	$config['zoom'] = '19';
@@ -62,4 +64,6 @@ Route::get('/addProduct', function()
 });
 
 
-Route::get('/productAdd', 'ProductsController@add');
+Route::post('/productAdd', 'ProductsController@add');
+Route::get('/addBarcode', 'ProductsController@addBarcode');
+
