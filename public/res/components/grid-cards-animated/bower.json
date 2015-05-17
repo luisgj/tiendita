@@ -1,0 +1,10 @@
+{
+  "name": "grid-cards-animated",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.5",
+    "core-elements": "Polymer/core-elemetns",
+    "paper-elements": "Polymer/paper-elements",
+    "core-animated-pages": "Polymer/paper-elements"
+  }
+}
