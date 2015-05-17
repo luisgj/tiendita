@@ -1,3 +1,21 @@
+<?php 
+try{
+  $charge = Conekta_Charge::create(array(
+    "amount"=> 51000,
+    "currency"=> "MXN",
+    "description"=> "Pizza Delivery",
+    "reference_id"=> "orden_de_id_interno",
+    "card"=> $_POST['conektaTokenId'],
+ //"tok_a4Ff0dD2xYZZq82d9",
+    "details"=> array(
+      "email"=>"logan@x-men.org"
+      )
+  ));
+}catch (Conekta_Error $e){
+  echo $e->getMessage();
+ //el pago no pudo ser procesado
+}
+ ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -49,7 +67,7 @@
 </head>
 <body>
   <h1>Cargo de $100 MXN por Conekta</h1> 
-  <form action="" method="POST" id="payment-form">
+  <form action="/checkout" method="POST" id="payment-form">
     <span class="payment-errors"></span>
 
     <div class="form-row hidden">
