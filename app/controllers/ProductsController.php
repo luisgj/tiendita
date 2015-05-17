@@ -16,6 +16,7 @@ class ProductsController extends BaseController
        // return Response::json(array('exito' => $data));
 
         $product = new Product(array(
+            'id_establishment' => 1,
             'name' => $data['name'],
             'description' => $data['description'],
             'price' => $data['price']
