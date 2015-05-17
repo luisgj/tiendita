@@ -165,3 +165,8 @@ paper-button.colored {
       color: #fff;
     }
 
+    paper-shadow {
+  margin: 2em;
+  padding: 5px;
+}
+
