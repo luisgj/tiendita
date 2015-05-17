@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration {
 			$table->integer('id_establishment');
 			$table->string('name');
 			$table->float('price');
+			$table->string('barcode');
 			$table->string('desc',1000);
 		});
 	}

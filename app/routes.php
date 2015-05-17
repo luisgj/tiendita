@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('static.home');
+	return View::make('hello');
 });
 
 Route::get('/geolocate/establishment/{lat}/{lng}', 
