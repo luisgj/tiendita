@@ -11,22 +11,22 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
-		$this->call('EstablismentTableSeeder');
+		$this->call('EstablishmentTableSeeder');
         $this->call('ProductTableSeeder');
 	}
 
 }
 
-class EstablismentTableSeeder extends Seeder {
+class EstablishmentTableSeeder extends Seeder {
  
     public function run(){
  
-        DB::table('establisment')->insert(array(
+        DB::table('establishments')->insert(array(
                 'name' => 'La costeña',
                 'lat' => '19.4120362',
                 'lng' => '-99.18064319999996' 
         ));
-        DB::table('establisment')->insert(array(
+        DB::table('establishments')->insert(array(
                 'name' => 'Los portrillos II',
                 'lat' => '19.40782666962928',
                 'lng' => '99.17729580314938'
@@ -35,7 +35,7 @@ class EstablismentTableSeeder extends Seeder {
     }
 }
 
-class ProductoTableSeeder extends Seeder{
+class ProductTableSeeder extends Seeder{
 
 	public function run(){
 

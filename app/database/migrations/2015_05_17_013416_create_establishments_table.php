@@ -16,8 +16,8 @@ class CreateEstablishmentsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->double('lat',2,12);
-			$table->double('lng',2,12);
+			$table->float('lat');
+			$table->float('lng');
 		});
 	}
 
