@@ -18,8 +18,8 @@
 </head>
 <body unresolved>
 	<core-toolbar style="background: #f1f1f2;">
-	<img id="logo1" src="/res/im/LogoCirculo.png">
-    	<span flex>Tiendapp</span>
+		<img id="logo1" src="/res/img/LogoCirculo.png">
+    	<img id="logo2" src="/res/img/LogoTiendapp.png">
     	<paper-input label="¿Que andas buscando?" floatingLabel style="width:30%; margin-right:4em; margin-bottom:0.7em"></paper-input>
  	</core-toolbar>
   <map-stores-mexico></map-stores-mexico>
