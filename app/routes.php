@@ -55,3 +55,11 @@ Route::get('/geolocate', function(){
     $map = Gmaps::create_map();
     echo '<html><head><script type="text/javascript">var centreGot = false;</script>'.$map['js']."</head><body>".$map['html']."</body></html>";
 });
+
+Route::get('/addProduct', function()
+{
+    return View::make('productAdd');
+});
+
+
+Route::get('/productAdd', 'ProductsController@add');
