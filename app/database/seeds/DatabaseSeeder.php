@@ -23,13 +23,13 @@ class EstablishmentTableSeeder extends Seeder {
  
         DB::table('establishments')->insert(array(
                 'name' => 'La costeña',
-                'lat' => '19.4120362',
-                'lng' => '-99.18064319999996' 
+                'lat' => '19.41287',
+                'lng' => '-99.177918' 
         ));
         DB::table('establishments')->insert(array(
                 'name' => 'Los portrillos II',
-                'lat' => '19.40782666962928',
-                'lng' => '99.17729580314938'
+                'lat' => '19.41199',
+                'lng' => '-99.18386'
 
         ));
     }
