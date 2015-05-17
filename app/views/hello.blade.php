@@ -22,8 +22,11 @@
     	<img id="logo2" src="/res/img/LogoTiendapp.png">
     	<input id="input1" type="text" name="" value="" placeholder="¿QUÉ SE TE ANTOJA?">
     	<img id="menu" src="/res/img/Menu.png">
+    	<img id="userlogin" src="/res/img/LogIn.png">
  	</core-toolbar>
-  <map-stores-mexico></map-stores-mexico>
+ 	<paper-shadow class="card" z="2">
+      <map-stores-mexico></map-stores-mexico>
+    </paper-shadow>
   <grid-cards-animated></grid-cards-animated>
 </body>
 </html>

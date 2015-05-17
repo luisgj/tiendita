@@ -101,7 +101,7 @@ paper-tabs[noink][nobar] paper-tab.core-selected {
       }
 
       .card {
-        height: 400px;
+        height: 500px;
         border-radius: 3px;
         text-align: start;
         overflow: hidden;
@@ -149,7 +149,19 @@ paper-tabs[noink][nobar] paper-tab.core-selected {
       }
 
       #menu {
-        margin-left: 2em;
+        margin-left: 0.4em;
       }
 
+      #userlogin {
+        margin-left: 1.6em;
+      }
+
+paper-button.colored {
+      color: #4285f4;
+    }
+
+    paper-button[raised].colored {
+      background: #4285f4;
+      color: #fff;
+    }
 

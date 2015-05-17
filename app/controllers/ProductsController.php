@@ -8,21 +8,23 @@ class ProductsController extends BaseController
 
         $json = $response->json();
 
-        echo $text = $json['barcode'][0]['text'];
+        return Response::json(array('codigo' => $json['barcode'][0]['text']));
     }
 
     public function add(){
         $data = Input::all();
+       // return Response::json(array('exito' => $data));
 
         $product = new Product(array(
-            'title' => $data['title'],
-            'desc' => $data['desc'],
+            'name' => $data['name'],
+            'description' => $data['description'],
+            'price' => $data['price']
         ));
 
         if($product->save()){
-            Response::json(array('exito' => true));
+           return Response::json(array('exito' => true));
         } else {
-            Response::jason(array('fallo' => true));
+           return Response::jason(array('fallo' => true));
         }
 
     }

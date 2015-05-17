@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration {
 			$table->float('price');
 			$table->string('barcode');
 			$table->string('description',1000);
+			$table->timestamps();
 		});
 	}
 
@@ -31,7 +32,7 @@ class CreateProductsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('productos');
+		Schema::drop('products');
 	}
 
 }

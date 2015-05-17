@@ -28,7 +28,7 @@ class CreateEstablishmentsTable extends Migration {
 	 */
 	public function down()
 	{
-		 Schema::drop('tiendas');
+		 Schema::drop('establishments');
 	}
 
 }

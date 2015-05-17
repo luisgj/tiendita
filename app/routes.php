@@ -66,4 +66,6 @@ Route::get('/addProduct', function()
 });
 
 
-Route::get('/productAdd', 'ProductsController@add');
+Route::post('/productAdd', 'ProductsController@add');
+Route::get('/addBarcode', 'ProductsController@addBarcode');
+
