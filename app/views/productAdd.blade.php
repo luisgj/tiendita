@@ -17,21 +17,26 @@
     <link rel="stylesheet" type="text/css" href="/res/styles.css">
 </head>
 <body unresolved>
-    <paper-input-decorator label="Nombre">
-      <input is="core-input" id="product-name">
-    </paper-input-decorator>
-    <paper-input-decorator label="Descripción">
-      <paper-autogrow-textarea>
-        <textarea id="product-desc"></textarea>
-      </paper-autogrow-textarea>
-    </paper-input-decorator>
-    <paper-input-decorator label="Nombre">
-      <input is="core-input" id="product-price">
-    </paper-input-decorator>
-    <paper-button raised class="colored">Agregar</paper-button>
-    {{Form::file('barcode',null,array('class' => 'product-barcode'))}}
-    <button id="addbarcode">Agregar identificador</button>
-    <h1 class="adding" style="display:none;">Agregando</h1>
+    <div style="width:1000px; margin:0 auto;">
+        <h1>Agregar Producto</h1>
+        <paper-input-decorator label="Nombre">
+          <input is="core-input" id="product-name">
+        </paper-input-decorator>
+        <paper-input-decorator label="Descripción">
+          <paper-autogrow-textarea>
+            <textarea id="product-desc"></textarea>
+          </paper-autogrow-textarea>
+        </paper-input-decorator>
+        <paper-input-decorator label="Precio">
+          <input is="core-input" id="product-price">
+        </paper-input-decorator>
+        <paper-button id="addproduct" raised class="colored">Agregar</paper-button>
+        <div style="display: block; margin-top: 45px;">
+            {{Form::file('barcode',null,array('class' => 'product-barcode'))}}
+            <paper-button raised class="colored" style="display: block;" id="addbarcode">Agregar identificador</paper-button>
+            <h4 class="adding" style="display:none; color: #844D9D;">Agregando</h4>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
@@ -59,6 +64,7 @@
         });
 
         $('#addbarcode').click(function(){
+            $('#addbarcode').hide();
             console.log('entrobar');
             $('.adding').show();
             $.ajax({
@@ -66,7 +72,7 @@
                 type: "GET",
                 success: function(data, textStatus, jqXHR)
                 {
-                    $('.adding').text(data.codigo);
+                    $('.adding').text('Tu código es '+ data.codigo);
                     console.log(data.codigo);
                 },
                 error: function (jqXHR, textStatus, errorThrown)
