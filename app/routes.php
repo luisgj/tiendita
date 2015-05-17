@@ -17,6 +17,6 @@ Route::get('/', function()
 });
 
 Route::get('/geolocate/establishment/{lat}/{lng}', 
-	array('as'   => 'list', 
-		 'uses'  => 'EstablishmentController@list'
+	array('as'   => 'listEstablishment', 
+		 'uses'  => 'EstablishmentController@listEstablishment'
 ));
