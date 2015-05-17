@@ -15,3 +15,8 @@ Route::get('/', function()
 {
 	return View::make('static.home');
 });
+
+Route::get('/geolocate/establishment/{lat}/{lng}', 
+	array('as'   => 'listEstablishment', 
+		 'uses'  => 'EstablishmentController@listEstablishment'
+));
