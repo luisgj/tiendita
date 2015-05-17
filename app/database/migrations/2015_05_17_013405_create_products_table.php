@@ -17,9 +17,10 @@ class CreateProductsTable extends Migration {
 			$table->increments('id');
 			$table->integer('id_establishment');
 			$table->string('name');
+			$table->string('url');
 			$table->float('price');
 			$table->string('barcode');
-			$table->string('desc',1000);
+			$table->string('description',1000);
 		});
 	}
 
