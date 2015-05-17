@@ -40,68 +40,68 @@ class ProductoTableSeeder extends Seeder{
 	public function run(){
 
 		DB::table('products')->insert(array(
-                'id_tienda' => '1',
+                'id_establishment' => '1',
                 'name' => 'coca cola',
                 'price' => '18.00',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
-                'id_tienda' => '1',
+                'id_establishment' => '1',
                 'name' => 'papel de baño',
                 'price' => '44.00',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
-                'id_tienda' => '1',
+                'id_establishment' => '1',
                 'name' => 'sabritas',
                 'price' => '12.00',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
         DB::table('products')->insert(array(
-                'id_tienda' => '1',
+                'id_establishment' => '1',
                 'name' => 'pepsi',
                 'price' => '11.00',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
-                'id_tienda' => '1',
+                'id_establishment' => '1',
                 'name' => 'doritos',
                 'price' => '9.00',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
-                'id_tienda' => '2',
+                'id_establishment' => '2',
                 'name' => 'coca cola',
                 'price' => '18.50',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
-                'id_tienda' => '2',
+                'id_establishment' => '2',
                 'name' => 'papel de baño',
                 'price' => '42.50',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
-                'id_tienda' => '2',
+                'id_establishment' => '2',
                 'name' => 'sabritas',
                 'price' => '11.50',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
         DB::table('products')->insert(array(
-                'id_tienda' => '2',
+                'id_establishment' => '2',
                 'name' => 'pepsi',
                 'price' => '11.00',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
         ));
 
         DB::table('products')->insert(array(
-                'id_tienda' => '2',
+                'id_establishment' => '2',
                 'name' => 'doritos',
                 'price' => '12.00',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
