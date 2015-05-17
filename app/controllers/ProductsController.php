@@ -28,4 +28,8 @@ class ProductsController extends BaseController
         }
 
     }
+    public function listProducts(){
+        $products = Product::all()->toJson();
+        return $products;
+    }
 }
