@@ -1,0 +1,86 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-animated-pages/core-animated-pages.html">
+<link rel="import" href="../paper-button/paper-button.html">
+
+
+<polymer-element name="grid-cards-animated" attributes="items">
+  <template>
+    <link rel="stylesheet" href="grid-cards-animated.css">
+
+    <core-animated-pages selected="{{page}}" transitions="hero-transition" on-core-animated-pages-transition-end="{{complete}}">
+
+      <section>
+
+        <div class="chip-container" hero-p on-tap="{{transition}}">
+
+          <template repeat="{{items as item}}">
+
+            <div class="chip" hero-id="{{item.price}}-{{item.name}}" hero?="{{selectedAlbum === item }}">
+              <img class="chip-top" src="{{item.url}}" hero-id="{{item.price}}-{{item.name}}-art" hero?="{{selectedAlbum === item}}"></img>
+              <div class="chip-bottom">
+                <div class="chip-album-title">{{item.name}}</div>
+                <div class="chip-price">{{item.price}}</div>
+              </div>
+            </div>
+
+          </template>
+
+        </div>
+      </section>
+
+      <section id="details">
+
+        <div class="card" layout horizontal hero-id="{{selectedAlbum.price}}-{{selectedAlbum.name}}" hero on-tap="{{transition}}">
+          <img class="card-left" src="{{selectedAlbum.url}}" hero-id="{{selectedAlbum.price}}-{{selectedAlbum.name}}-art" hero></img>
+          <div class="card-right" flex>
+            <div layout horizontal center>
+              <div>
+                <img class="card-icon" src="{{selectedAlbum.url}}"></img>
+              </div>
+              <div flex>
+                <div class="card-name-title">{{selectedAlbum.name}}</div>
+                <div class="card-name-price">{{selectedAlbum.price}}</div>
+              </div>
+            </div>
+            <div><strong>Información Nutrimental:</strong></div><br>
+            <div>Kcal: 350 cal</div>
+            <div>Grasas totales: 10g</div>
+            <div>-Grasas trans: 0g</div>
+            <div>-Grasas saturadas: 10g</div>
+            <div>Proteinas: 0.8g</div><br><br><br>
+            <paper-button raised class="colored">Comprar</paper-button>
+          </div>
+        </div>
+
+      </section>
+
+    </core-animated-pages>
+  </template>
+
+  <script>
+    Polymer('grid-cards-animated', {
+      page: 0,
+
+      items: [
+        { price: '$10.00', name: 'Coca-Cola 600ml', url: 'img/coca.jpg' },
+        { price: '$10.00', name: 'Doritos nacho', url: 'img/doritos.png' },
+        { price: '$36.00', name: 'Paketaxo azul', url: 'img/paquetaxo.jpg' },
+        { price: '$11.50', name: 'Emperador Chocolate', url: 'img/emperador.jpg' },
+        { price: '$10.00', name: 'Agua Bonafont 1L', url: 'img/bonafont.jpg' },
+        { price: '$7', name: 'Chokis brownie', url: 'img/chokis.jpg' },
+        { price: '$32.50', name: 'Zucaritas Chocolate', url: 'img/zucaritas.jpg' }
+      ],
+
+      selectedAlbum: null,
+
+      transition: function(e) {
+        if (this.page === 0 && e.target.templateInstance.model.item) {
+          this.selectedAlbum = e.target.templateInstance.model.item;
+          this.page = 1;
+        } else {
+          this.page = 0;
+        }
+      }
+    });
+  </script>
+</polymer-element>
